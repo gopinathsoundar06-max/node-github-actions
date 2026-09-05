@@ -1,0 +1,16 @@
+name: TestProject
+on: push
+jobs: 
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Getcode
+        uses: action/checkout@v3
+      - name: install nodejs
+        uses: actions/setup-node@v3
+        with:
+          node-version:18
+      - name: install dependencies
+        run: npm ci
+      - name: Runtests
+        run: npm test
