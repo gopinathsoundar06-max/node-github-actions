@@ -1,0 +1,10 @@
+    {
+  "name": "node-github-actions-practice",
+  "version": "1.0.0",
+  "description": "Node.js project for practicing GitHub Actions",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "node test.js"
+  }
+}
