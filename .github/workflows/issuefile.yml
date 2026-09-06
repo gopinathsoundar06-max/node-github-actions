@@ -8,5 +8,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: New Issue
-        run: echo "A new issue was created"
+      - name: issues
+        run: echo "${{ (github.event) }}"
