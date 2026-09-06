@@ -35,14 +35,3 @@ jobs:
 
       - name: words
         run: echo "the job is running" 
-on:
-  issues:
-    types: [opened]
-
-jobs:
-  issue:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: New Issue
-        run: echo "A new issue was created"
